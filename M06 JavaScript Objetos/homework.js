@@ -242,7 +242,15 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
       const precioConDescuento = this.precio - (this.precio * this.porcentajeDeDescuento);
       return precioConDescuento;
    };
-   return objetoProducto;
+   return objetoProducto.calcularPrecioDescuento();
+
+   // function agregarMetodoCalculoDescuento(objetoProducto) {
+   //    objetoProducto.calcularPrecioDescuento = function() {
+   //       return this.precio * (1 - this.porcentajeDeDescuento);
+   //    };
+   
+   //    return objetoProducto.calcularPrecioDescuento();
+   // }
 }
 const producto = {
    precio: 10,
