@@ -76,7 +76,7 @@ function filter(arrayOfStrings) {
       }
    }
    return letraArray;
-}
+};
 
    /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
    module.exports = {
